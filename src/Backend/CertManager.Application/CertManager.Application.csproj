@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="UseCases\Certificate\Revoke\" />
+    <Folder Include="UseCases\Certificate\Renew\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CertManager.Exceptions\CertManager.Exceptions.csproj" />
+    <ProjectReference Include="..\..\Shared\CertManager.Communications\CertManager.Communications.csproj" />
+    <ProjectReference Include="..\CertManager.Domain\CertManager.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
