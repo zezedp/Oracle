@@ -20,6 +20,7 @@ namespace CertManager.Application.UseCases.Certificate.Create
             // Mandar alguém criar CSR
 
             // Mandar alguém assinar
+            
             // Mandar alguém salvar no Vault
             
         }
